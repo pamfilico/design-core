@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.1 — 2026-10-11
+
+- `dist/` relative imports carry `.js` extensions, so it also loads in plain Node ESM
+  (vitest, scripts), not only through bundlers.
+
 ## v0.2.0 — 2026-10-11
 
 - Repositioned as the company **component** design system: components only, no
