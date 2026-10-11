@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.2 — 2026-10-11
+
+- Source imports use `.tsx` extensions; `tsc` rewrites them to `.js` in `dist/`
+  (`rewriteRelativeImportExtensions`). v0.2.1's `.js` imports broke the Next playground,
+  because Turbopack does not map `.js` to `.tsx` when importing source files.
+
 ## v0.2.1 — 2026-10-11
 
 - `dist/` relative imports carry `.js` extensions, so it also loads in plain Node ESM

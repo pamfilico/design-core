@@ -22,7 +22,7 @@ each app's own design system, which sits on top of this one.
 Installed from GitHub by tag (it is **not** published to npm):
 
 ```bash
-npm install github:pamfilico/design-core#v0.2.1
+npm install github:pamfilico/design-core#v0.2.2
 ```
 
 `dist/` is committed at each release tag, so the install builds nothing and

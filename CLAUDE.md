@@ -14,7 +14,8 @@ README.md "Rules" first. In short:
 
 1. `src/<group>/<Name>.tsx`, marked `"use client"` if it uses state or effects, with a
    named export and exported `<Name>Props`.
-2. Export it and its types from `src/index.ts`.
+2. Export it and its types from `src/index.ts`. Write relative imports with the real
+   extension (`./auth/AuthCard.tsx`); `tsc` rewrites them to `.js` in `dist/`.
 3. `src/<group>/<Name>.stories.tsx` with title `Design Core/<Group>/<Name>` and at
    least `English`, `Greek` and `Dark` stories. Put the strings in
    `playground/messages/{en,el}.json` under a `<Name>` namespace.
