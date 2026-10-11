@@ -1,6 +1,6 @@
 {
   "name": "@pamfilico/design-core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Company component design system for Pamfilico apps. Components only — no themes, tokens or brand; styled entirely by the host app's MUI theme.",
   "type": "module",
   "main": "dist/index.js",
