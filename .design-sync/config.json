@@ -1,0 +1,29 @@
+{
+  "projectId": "84594364-e919-451b-88be-031bc7bb4e92",
+  "shape": "storybook",
+  "storybookConfigDir": ".storybook",
+  "storybookStatic": ".design-sync/sb-reference",
+  "pkg": "@pamfilico/design-core",
+  "globalName": "PamfilicoDesignCore",
+  "entry": "dist/index.js",
+  "buildCmd": "npm run build",
+  "extraEntries": [
+    "@mui/material",
+    "./.design-sync/preview-theme.ts"
+  ],
+  "provider": {
+    "component": "ThemeProvider",
+    "props": {
+      "theme": {
+        "$ref": "dsPreviewTheme"
+      }
+    }
+  },
+  "overrides": {
+    "AuthScreen": {
+      "cardMode": "single",
+      "primaryStory": "English"
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}

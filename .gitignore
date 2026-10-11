@@ -6,3 +6,9 @@ playground/.next/
 playground/next-env.d.ts
 .react-email/
 *.log
+.design-sync/sb-reference/
+.design-sync/learnings/
+.design-sync/.cache/
+.design-sync/node_modules
+.ds-sync/
+ds-bundle/
