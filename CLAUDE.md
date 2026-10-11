@@ -10,6 +10,14 @@ README.md "Rules" first. In short:
 - **Generic, presentational.** No fetching, no auth, no app imports. A component used
   by only one app does not belong here.
 
+## Headers, sidebars, footers
+
+`src/headers/HeaderNN`, `src/sidebars/SidebarNN` and `src/footers/FooterNN` are neutral copies of
+designs the apps use, numbered by kind. **No app, product or client names anywhere**, and **no underscore
+files or folders**. Logo, strings, nav items, user and callbacks are props. Use the `harvest-components`
+skill to add more. New numbers continue from the highest one in the folder, and each new file goes in
+that folder's `index.ts`. Private provenance lives in `.sources/`, which is gitignored and never published.
+
 ## Adding a component
 
 1. `src/<group>/<Name>.tsx`, marked `"use client"` if it uses state or effects, with a
@@ -17,8 +25,8 @@ README.md "Rules" first. In short:
 2. Export it and its types from `src/index.ts`. Write relative imports with the real
    extension (`./auth/AuthCard.tsx`); `tsc` rewrites them to `.js` in `dist/`.
 3. `src/<group>/<Name>.stories.tsx` with title `Design Core/<Group>/<Name>` and at
-   least `English`, `Greek` and `Dark` stories. Put the strings in
-   `playground/messages/{en,el}.json` under a `<Name>` namespace.
+   least `English`, `Greek` and `Dark` stories. Keep the strings in the story file as
+   `{ en: {...}, el: {...} }`, picked by `globals.locale`.
 4. Optionally show it on the playground page (`playground/app/[locale]/page.tsx`).
 5. Run `npm run typecheck && npm run build && npm run build-storybook`.
 

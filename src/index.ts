@@ -6,3 +6,6 @@ export type {
   AuthNotice,
 } from "./auth/AuthCard.tsx";
 export type { AuthScreenProps } from "./auth/AuthScreen.tsx";
+export * from "./headers/index.ts";
+export * from "./sidebars/index.ts";
+export * from "./footers/index.ts";

@@ -1,11 +1,15 @@
 # @pamfilico/design-core
 
+> **Under active development.** Components, props and folder layout are
+> changing often, and releases before 1.0 may break things without notice. Pin an exact
+> tag (`#vX.Y.Z`) and read `CHANGELOG.md` before you upgrade.
+
 The company **component** design system for Pamfilico apps.
 
 **It contains components only.** It ships no theme, tokens, palette, fonts or logos.
 Every component reads the host app's MUI theme (`palette.primary`, `text.secondary`,
-`divider`, `background.default`, …). Drop the same component into CarFast or
-TravelSuite and it takes on that app's brand. Brand, logos and assets belong to
+`divider`, `background.default`, …). Drop the same component into any app and it
+takes on that app's brand. Brand, logos and assets belong to
 each app's own design system, which sits on top of this one.
 
 ## Rules
@@ -22,7 +26,7 @@ each app's own design system, which sits on top of this one.
 Installed from GitHub by tag (it is **not** published to npm):
 
 ```bash
-npm install github:pamfilico/design-core#v0.2.2
+npm install github:pamfilico/design-core#v0.3.0
 ```
 
 `dist/` is committed at each release tag, so the install builds nothing and
@@ -55,7 +59,7 @@ You should see Storybook list `Design Core/Auth/AuthCard`. Use the **Locale** an
 
 | Where | What |
 |---|---|
-| `src/` | The library. One folder per group (`auth/`, …), stories next to components. |
+| `src/` | The library: `auth/`, `headers/`, `sidebars/`, `footers/`, with stories next to each component. |
 | `.storybook/` | Storybook 10 (`@storybook/nextjs-vite`). The stock MUI theme in light/dark and the en/el next-intl provider are test harnesses only. |
 | `playground/` | A real Next 16 App Router app with next-intl (`[locale]` routing, `proxy.ts`). It imports `@pamfilico/design-core` straight from `src/`. |
 | `playground/messages/` | `en.json` and `el.json`, which both Storybook and the playground read. |
