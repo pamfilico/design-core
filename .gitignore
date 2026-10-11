@@ -1,4 +1,8 @@
 node_modules/
-dist/
 *.tsbuildinfo
 .DS_Store
+storybook-static/
+playground/.next/
+playground/next-env.d.ts
+.react-email/
+*.log

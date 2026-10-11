@@ -1,7 +1,7 @@
 {
   "name": "@pamfilico/design-core",
-  "version": "0.1.0",
-  "description": "Shared, theme-driven design-system components used across Pamfilico apps. Brand-agnostic — styled entirely by the host app's MUI theme.",
+  "version": "0.2.0",
+  "description": "Company component design system for Pamfilico apps. Components only — no themes, tokens or brand; styled entirely by the host app's MUI theme.",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -17,23 +17,55 @@
     "dist/",
     "README.md"
   ],
+  "sideEffects": false,
   "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
+    "dev": "cd playground && next dev --port 3099",
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "storybook": "storybook dev -p 6099 --no-open",
+    "build-storybook": "storybook build -o storybook-static",
+    "email:dev": "email dev --dir emails --port 3098",
+    "release": "bash scripts/release.sh"
   },
   "peerDependencies": {
-    "react": ">=18",
-    "@mui/material": ">=5",
+    "react": ">=19",
+    "react-dom": ">=19",
+    "@mui/material": "^7.3.0",
     "@emotion/react": ">=11",
-    "@emotion/styled": ">=11"
+    "@emotion/styled": ">=11",
+    "@react-email/components": "^1",
+    "@react-email/render": "^2"
+  },
+  "peerDependenciesMeta": {
+    "@react-email/components": {
+      "optional": true
+    },
+    "@react-email/render": {
+      "optional": true
+    }
   },
   "devDependencies": {
-    "typescript": "^5.6.0",
-    "react": "^19.0.0",
-    "@types/react": "^19.0.0",
-    "@mui/material": "^7.3.4",
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0"
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
+    "@mui/material-nextjs": "^7.3.10",
+    "@react-email/components": "^1.0.12",
+    "@react-email/render": "^2.1.0",
+    "@storybook/addon-a11y": "^10.6.1",
+    "@storybook/addon-docs": "^10.6.1",
+    "@storybook/nextjs-vite": "^10.6.1",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "next": "~16.3.8",
+    "next-intl": "^4.14.2",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-email": "^6.9.5",
+    "storybook": "^10.6.1",
+    "typescript": "^5.9.3",
+    "vite": "^7"
   },
   "author": "Pamfilico",
   "license": "MIT",

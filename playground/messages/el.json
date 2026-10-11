@@ -1,0 +1,22 @@
+{
+  "Playground": {
+    "title": "Design Core",
+    "subtitle": "Σύστημα σχεδίασης στοιχείων της εταιρείας. Μόνο στοιχεία — κάθε χρώμα προέρχεται από το θέμα MUI της εφαρμογής.",
+    "components": "Στοιχεία",
+    "switchLocale": "English"
+  },
+  "AuthCard": {
+    "title": "Σύνδεση",
+    "subtitle": "Καλώς ήρθατε ξανά",
+    "emailLabel": "Διεύθυνση email",
+    "emailPlaceholder": "esy@example.com",
+    "passwordLabel": "Κωδικός",
+    "submit": "Αποστολή συνδέσμου",
+    "submitPassword": "Σύνδεση",
+    "or": "ή",
+    "google": "Συνέχεια με Google",
+    "sent": "Ελέγξτε τα εισερχόμενά σας για τον σύνδεσμο.",
+    "error": "Κάτι πήγε στραβά. Δοκιμάστε ξανά.",
+    "noAccount": "Δεν έχετε λογαριασμό; Εγγραφή"
+  }
+}

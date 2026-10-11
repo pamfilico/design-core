@@ -1,0 +1,22 @@
+{
+  "Playground": {
+    "title": "Design Core",
+    "subtitle": "Company component design system. Components only — every color comes from the host app's MUI theme.",
+    "components": "Components",
+    "switchLocale": "Ελληνικά"
+  },
+  "AuthCard": {
+    "title": "Sign in",
+    "subtitle": "Welcome back",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@example.com",
+    "passwordLabel": "Password",
+    "submit": "Send magic link",
+    "submitPassword": "Sign in",
+    "or": "or",
+    "google": "Continue with Google",
+    "sent": "Check your inbox for the magic link.",
+    "error": "Something went wrong. Please try again.",
+    "noAccount": "Don't have an account? Sign up"
+  }
+}

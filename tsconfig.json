@@ -5,16 +5,18 @@
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "outDir": "dist",
-    "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@pamfilico/design-core": ["./src/index.ts"]
+    }
   },
-  "include": ["src"],
-  "exclude": ["dist", "node_modules", "tests"]
+  "include": ["src", ".storybook", "emails", "playground"],
+  "exclude": ["dist", "node_modules", "storybook-static", "playground/.next"]
 }
