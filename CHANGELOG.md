@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.3.0 — 2026-10-11
+
+- 48 headers (`Header01`–`Header48`), 22 sidebars (`Sidebar01`–`Sidebar22`) and 8 footers
+  (`Footer01`–`Footer08`). These are neutral, numbered copies of the designs our apps use: no app names,
+  logos or colours, with strings, logo, nav items, user and callbacks as props. They have no Next.js
+  dependency (`linkComponent` defaults to `"a"`). Every one has English, Greek and Dark stories.
+- `@mui/icons-material` ^7.3 is an optional peer.
+- `harvest-components` skill (`.claude/skills/`) for adding more from other repos.
+- README marks the package as under active development.
+
 ## v0.2.2 — 2026-10-11
 
 - Source imports use `.tsx` extensions; `tsc` rewrites them to `.js` in `dist/`
